@@ -7,8 +7,7 @@ def main():
     random.shuffle(questions)
     for question in questions:
         print(question.build_question())
-        user_ansver=input()
-        question.user_answer = user_ansver
+        question.user_answer = input()
         if question.is_correct():
             print(question.bulit_positive_feedback())
         else:
